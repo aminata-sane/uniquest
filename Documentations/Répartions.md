@@ -11,12 +11,37 @@ Répartition des tâches — UniQuest (C# + Unity)
 
 ---
 
-## Étape 1 : Mise en place du projet
-### Tâches communes
-- Installer Unity et configurer le projet en C#.
-- Créer un repository GitHub pour le travail collaboratif.
-- Définir l’architecture logicielle et les conventions de code.
-- Concevoir un premier diagramme de classes (Personnage, Attaque, Objet, Inventaire).
+## Étape 1 : Mise en place du projet ✅
+### Tâches communes (TERMINÉ)
+- ✅ Installer Unity et configurer le projet en C#.
+- ✅ Créer un repository GitHub pour le travail collaboratif.
+- ✅ Définir l'architecture logicielle et les conventions de code.
+- ✅ Concevoir un premier diagramme de classes (Personnage, Attaque, Objet, Inventaire).
+
+### 📁 **Structure du projet créée :**
+```
+Assets/
+├── Scripts/
+│   ├── Characters/          # Classes des personnages
+│   ├── Combat/             # Système de combat
+│   ├── Map/                # Gestion de la carte
+│   ├── UI/                 # Interfaces utilisateur
+│   ├── Inventory/          # Système d'inventaire
+│   └── GameManager.cs      # Manager principal
+├── Sprites/                # Images et textures
+└── Scenes/                 # Scènes Unity
+```
+
+### 🔧 **Classes de base implémentées :**
+- **`Character.cs`** : Classe abstraite pour tous les personnages
+- **`Attack.cs`** : Système d'attaques avec ScriptableObjects
+- **`InventoryManager.cs`** : Gestion complète de l'inventaire
+- **`GameManager.cs`** : Manager principal avec sauvegarde/chargement
+
+### 🎯 **Prêt pour la suite :**
+- Nelson et Mehdi peuvent maintenant cloner le repo : `git clone https://github.com/aminata-sane/uniquest.git`
+- Ouvrir le projet dans Unity Hub
+- Commencer le développement selon la répartition ci-dessous
 
 ---
 
