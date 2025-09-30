@@ -38,6 +38,11 @@ Assets/
 - **`InventoryManager.cs`** : Gestion complète de l'inventaire
 - **`GameManager.cs`** : Manager principal avec sauvegarde/chargement
 
+### 📊 **Diagramme de classes :**
+- **Voir** : `Documentations/Diagramme-Classes.md` pour l'architecture complète
+- **Relations** : Héritage, composition et associations clairement définies
+- **Extensibilité** : Prêt pour les nouvelles classes (Warrior, Mage, Enemy, etc.)
+
 ### 🎯 **Prêt pour la suite :**
 - Nelson et Mehdi peuvent maintenant cloner le repo : `git clone https://github.com/aminata-sane/uniquest.git`
 - Ouvrir le projet dans Unity Hub
