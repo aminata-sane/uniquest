@@ -8,6 +8,10 @@ namespace UniQuest.Characters
         public float moveSpeed = 5f;
         public bool canMove = true;
         
+        [Header("Correction des axes (si nécessaire)")]
+        public bool invertHorizontal = false;
+        public bool invertVertical = true;  // Corrigé par défaut pour Unity
+        
         [Header("Player Components")]
         private Rigidbody2D rb;
         private Vector2 movement;
@@ -49,8 +53,23 @@ namespace UniQuest.Characters
         private void HandleInput()
         {
             // Récupérer les entrées du joueur (WASD ou flèches)
-            movement.x = Input.GetAxisRaw("Horizontal"); // A/D ou flèches gauche/droite
-            movement.y = Input.GetAxisRaw("Vertical");   // W/S ou flèches haut/bas
+            float horizontalInput = Input.GetAxisRaw("Horizontal"); // A/D ou flèches gauche/droite
+            float verticalInput = Input.GetAxisRaw("Vertical");     // W/S ou flèches haut/bas
+            
+            // Appliquer la correction d'inversion si nécessaire
+            if (invertHorizontal) horizontalInput = -horizontalInput;
+            if (invertVertical) verticalInput = -verticalInput;
+            
+            // Appliquer les axes correctement
+            movement.x = horizontalInput;  // Positif = droite, Négatif = gauche
+            movement.y = verticalInput;    // Positif = haut, Négatif = bas
+            
+            // Debug pour vérifier les entrées
+            if (movement != Vector2.zero)
+            {
+                Debug.Log($"Input brut - H: {Input.GetAxisRaw("Horizontal")}, V: {Input.GetAxisRaw("Vertical")}");
+                Debug.Log($"Input corrigé - H: {horizontalInput}, V: {verticalInput}, Movement final: {movement}");
+            }
             
             // Normaliser pour éviter le mouvement diagonal plus rapide
             movement = movement.normalized;
@@ -61,6 +80,12 @@ namespace UniQuest.Characters
             // Appliquer le mouvement
             Vector2 targetVelocity = movement * moveSpeed;
             rb.velocity = targetVelocity;
+            
+            // Debug pour vérifier le mouvement
+            if (targetVelocity != Vector2.zero)
+            {
+                Debug.Log($"Velocity appliquée: {targetVelocity}, Position: {transform.position}");
+            }
         }
 
         // Méthodes utiles pour le gameplay
