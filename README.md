@@ -17,6 +17,9 @@ cd uniquest
 3. Sélectionner le dossier `uniquest`
 4. Double-cliquer pour ouvrir le projet
 
+> **⚠️ Version Unity requise :** Unity 6000.2.6f1 (Unity 6)  
+> 📦 Sauvegarde Unity 2022 disponible sur la branche `backup/unity-2022-3-62f1`
+
 ## 🌿 Workflow Git (Branches)
 
 ### Créer sa branche de développement
