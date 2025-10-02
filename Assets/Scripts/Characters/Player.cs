@@ -79,7 +79,7 @@ namespace UniQuest.Characters
         {
             // Appliquer le mouvement
             Vector2 targetVelocity = movement * moveSpeed;
-            rb.velocity = targetVelocity;
+            rb.linearVelocity = targetVelocity;
             
             // Debug pour vérifier le mouvement
             if (targetVelocity != Vector2.zero)
@@ -94,7 +94,7 @@ namespace UniQuest.Characters
             this.canMove = canMove;
             if (!canMove)
             {
-                rb.velocity = Vector2.zero; // Arrêter le mouvement
+                rb.linearVelocity = Vector2.zero; // Arrêter le mouvement
             }
         }
 
