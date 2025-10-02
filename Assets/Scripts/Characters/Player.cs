@@ -3,8 +3,24 @@ using UnityEngine;
 namespace UniQuest.Characters
 {
     public class Player : Character
-    {
-        [Header("Player Movement")]
+          private void MovePlayer()
+        {
+            // Calculer la vitesse avec modificateur de terrain
+            float effectiveSpeed = moveSpeed * currentTerrainSpeedMultiplier;
+            
+            // Appliquer le mouvement
+            Vector2 targetVelocity = movement * effectiveSpeed;
+            rb.linearVelocity = targetVelocity;
+            
+            // Mettre à jour le modificateur de terrain
+            UpdateTerrainEffects();
+            
+            // Debug pour vérifier le mouvement
+            if (targetVelocity != Vector2.zero)
+            {
+                Debug.Log($"Velocity: {targetVelocity}, Speed: {effectiveSpeed}, Terrain: {currentTerrainSpeedMultiplier}");
+            }
+        }[Header("Player Movement")]
         public float moveSpeed = 5f;
         public bool canMove = true;
         
@@ -15,6 +31,10 @@ namespace UniQuest.Characters
         [Header("Player Components")]
         private Rigidbody2D rb;
         private Vector2 movement;
+
+        [Header("Terrain Effects")]
+        public float currentTerrainSpeedMultiplier = 1f;
+        private UniQuest.Map.TerrainManager terrainManager;
 
         protected override void Start()
         {
@@ -30,6 +50,15 @@ namespace UniQuest.Characters
             // Configuration du Rigidbody2D
             rb.gravityScale = 0f; // Pas de gravité pour un jeu 2D top-down
             rb.freezeRotation = true; // Empêcher la rotation
+            
+            // Trouver le TerrainManager
+            terrainManager = FindFirstObjectByType<UniQuest.Map.TerrainManager>();
+            
+            // S'assurer que le Player a le bon tag
+            if (!gameObject.CompareTag("Player"))
+            {
+                gameObject.tag = "Player";
+            }
             
             Debug.Log($"Joueur {characterName} initialisé!");
         }
@@ -78,7 +107,7 @@ namespace UniQuest.Characters
         private void MovePlayer()
         {
             // Appliquer le mouvement
-            Vector2 targetVelocity = movement * moveSpeed;
+            Vector2 targetVelocity = movement * moveSpeed * currentTerrainSpeedMultiplier;
             rb.linearVelocity = targetVelocity;
             
             // Debug pour vérifier le mouvement
@@ -126,6 +155,25 @@ namespace UniQuest.Characters
                 Debug.Log("PNJ rencontré!");
                 // Logique de dialogue
             }
+        }
+
+        // Gestion des effets de terrain
+        private void UpdateTerrainEffects()
+        {
+            if (terrainManager != null)
+            {
+                currentTerrainSpeedMultiplier = terrainManager.GetMovementMultiplierAt(transform.position);
+            }
+        }
+
+        public void SetTerrainSpeedMultiplier(float multiplier)
+        {
+            currentTerrainSpeedMultiplier = Mathf.Clamp(multiplier, 0.1f, 2f);
+        }
+
+        public float GetCurrentSpeed()
+        {
+            return moveSpeed * currentTerrainSpeedMultiplier;
         }
 
         // Override pour ajouter des comportements spécifiques au joueur
