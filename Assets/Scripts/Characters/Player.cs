@@ -3,24 +3,8 @@ using UnityEngine;
 namespace UniQuest.Characters
 {
     public class Player : Character
-          private void MovePlayer()
-        {
-            // Calculer la vitesse avec modificateur de terrain
-            float effectiveSpeed = moveSpeed * currentTerrainSpeedMultiplier;
-            
-            // Appliquer le mouvement
-            Vector2 targetVelocity = movement * effectiveSpeed;
-            rb.linearVelocity = targetVelocity;
-            
-            // Mettre à jour le modificateur de terrain
-            UpdateTerrainEffects();
-            
-            // Debug pour vérifier le mouvement
-            if (targetVelocity != Vector2.zero)
-            {
-                Debug.Log($"Velocity: {targetVelocity}, Speed: {effectiveSpeed}, Terrain: {currentTerrainSpeedMultiplier}");
-            }
-        }[Header("Player Movement")]
+    {
+        [Header("Player Movement")]
         public float moveSpeed = 5f;
         public bool canMove = true;
         
@@ -106,14 +90,20 @@ namespace UniQuest.Characters
 
         private void MovePlayer()
         {
+            // Calculer la vitesse avec modificateur de terrain
+            float effectiveSpeed = moveSpeed * currentTerrainSpeedMultiplier;
+            
             // Appliquer le mouvement
-            Vector2 targetVelocity = movement * moveSpeed * currentTerrainSpeedMultiplier;
+            Vector2 targetVelocity = movement * effectiveSpeed;
             rb.linearVelocity = targetVelocity;
+            
+            // Mettre à jour le modificateur de terrain
+            UpdateTerrainEffects();
             
             // Debug pour vérifier le mouvement
             if (targetVelocity != Vector2.zero)
             {
-                Debug.Log($"Velocity appliquée: {targetVelocity}, Position: {transform.position}");
+                Debug.Log($"Velocity: {targetVelocity}, Speed: {effectiveSpeed}, Terrain: {currentTerrainSpeedMultiplier}");
             }
         }
 
