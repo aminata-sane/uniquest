@@ -27,7 +27,7 @@ namespace UniQuest.Core
             {
                 if (_instance == null)
                 {
-                    _instance = FindObjectOfType<GameManager>();
+                    _instance = FindFirstObjectByType<GameManager>();
                 }
                 return _instance;
             }
