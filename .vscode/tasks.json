@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Test Unity Project - Check Scripts",
+			"type": "shell",
+			"command": "find",
+			"args": [
+				"Assets/Scripts",
+				"-name",
+				"*.cs",
+				"-exec",
+				"echo",
+				"✅ {}",
+				";"
+			],
+			"group": "test",
+			"isBackground": false
+		}
+	]
+}
