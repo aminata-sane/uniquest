@@ -253,24 +253,5 @@ namespace UniQuest.Map
         }
     }
 
-    [System.Serializable]
-    public class TerrainTile
-    {
-        public TerrainType type;
-        public Color color = Color.white;
-        public float movementSpeedMultiplier = 1f;
-        public bool isWalkable = true;
-        public int damagePerSecond = 0;
-        public AudioClip walkSound;
-    }
-
-    public enum TerrainType
-    {
-        Grass,    // Herbe normale
-        Stone,    // Pierre (ralentit)
-        Water,    // Eau (ralentit beaucoup)
-        Sand,     // Sable
-        Lava,     // Lave (dégâts)
-        Ice       // Glace (glisse)
-    }
+    // Types TerrainTile et TerrainType déplacés vers TerrainTypes.cs
 }
