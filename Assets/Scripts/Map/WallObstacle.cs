@@ -56,16 +56,31 @@ namespace UniQuest.Map
             // Configuration du collider
             obstacleCollider.isTrigger = false; // Collision solide
             
+            // FORCER LA TAILLE DU COLLIDER (très important !)
+            obstacleCollider.size = new Vector2(1f, 1f); // Taille fixe de 1x1 unité
+            
             // Layer pour les obstacles
             gameObject.layer = LayerMask.NameToLayer("Default"); // On utilisera les layers plus tard
 
-            Debug.Log($"Obstacle {obstacleType} initialisé à la position {transform.position}");
+            Debug.Log($"🔶 Obstacle {obstacleType} créé à {transform.position}");
         }
 
         private Sprite CreateDefaultSprite()
         {
-            // Utiliser le sprite carré par défaut d'Unity
-            return Resources.GetBuiltinResource<Sprite>("UI/Skin/Knob.psd");
+            // Créer un sprite carré plus grand (64x64 pixels)
+            Texture2D texture = new Texture2D(64, 64);
+            
+            // Remplir toute la texture en blanc
+            for (int x = 0; x < 64; x++)
+            {
+                for (int y = 0; y < 64; y++)
+                {
+                    texture.SetPixel(x, y, Color.white);
+                }
+            }
+            
+            texture.Apply();
+            return Sprite.Create(texture, new Rect(0, 0, 64, 64), new Vector2(0.5f, 0.5f), 64);
         }
 
         private Color GetObstacleColor()

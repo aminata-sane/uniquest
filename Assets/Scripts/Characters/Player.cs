@@ -35,6 +35,14 @@ namespace UniQuest.Characters
             rb.gravityScale = 0f; // Pas de gravité pour un jeu 2D top-down
             rb.freezeRotation = true; // Empêcher la rotation
             
+            // S'assurer qu'il y a un Collider2D pour les collisions
+            BoxCollider2D playerCollider = GetComponent<BoxCollider2D>();
+            if (playerCollider == null)
+            {
+                playerCollider = gameObject.AddComponent<BoxCollider2D>();
+                playerCollider.size = new Vector2(0.8f, 0.8f); // Taille du Player
+            }
+            
             // Trouver le TerrainManager
             terrainManager = FindFirstObjectByType<UniQuest.Map.TerrainManager>();
             
@@ -101,9 +109,10 @@ namespace UniQuest.Characters
             UpdateTerrainEffects();
             
             // Debug pour vérifier le mouvement
-            if (targetVelocity != Vector2.zero)
+            // Debug occasionnel seulement
+            if (targetVelocity != Vector2.zero && Time.frameCount % 60 == 0) // Une fois par seconde environ
             {
-                Debug.Log($"Velocity: {targetVelocity}, Speed: {effectiveSpeed}, Terrain: {currentTerrainSpeedMultiplier}");
+                Debug.Log($"🔵 Player se déplace: Vitesse={effectiveSpeed:F1}, Terrain={currentTerrainSpeedMultiplier:F1}");
             }
         }
 

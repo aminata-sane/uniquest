@@ -3,14 +3,12 @@ using UnityEngine;
 namespace UniQuest.Debug
 {
     /// <summary>
-    /// Helper pour déboguer et tester la caméra
-    /// Affiche des informations sur la position de la caméra et les objets dans la scène
+    /// Helper simple pour déboguer la caméra - version allégée
     /// </summary>
     public class CameraDebugHelper : MonoBehaviour
     {
         [Header("Debug Settings")]
         public bool showDebugInfo = true;
-        public bool showGizmos = true;
         
         private Camera mainCamera;
         private Transform player;
@@ -18,6 +16,8 @@ namespace UniQuest.Debug
         private void Start()
         {
             mainCamera = Camera.main;
+            if (mainCamera == null)
+                mainCamera = FindFirstObjectByType<Camera>();
             
             // Trouver le player
             GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
@@ -30,52 +30,36 @@ namespace UniQuest.Debug
         private void OnGUI()
         {
             if (!showDebugInfo) return;
+            if (mainCamera == null) return;
             
-            GUILayout.BeginArea(new Rect(10, 10, 300, 200));
-            GUILayout.Label("=== DEBUG CAMÉRA ===");
+            GUI.Box(new Rect(10, 10, 300, 150), "");
+            GUILayout.BeginArea(new Rect(15, 15, 290, 140));
             
-            if (mainCamera != null)
-            {
-                GUILayout.Label($"Position Caméra: {mainCamera.transform.position}");
-                GUILayout.Label($"Orthographic Size: {mainCamera.orthographicSize:F1}");
-            }
+            GUILayout.Label("=== DEBUG CAMERA ===");
+            GUILayout.Label($"Position: {mainCamera.transform.position:F1}");
+            GUILayout.Label($"Zoom: {mainCamera.orthographicSize:F1}");
             
             if (player != null)
             {
-                GUILayout.Label($"Position Player: {player.position}");
+                GUILayout.Label($"Player: {player.position:F1}");
                 float distance = Vector3.Distance(mainCamera.transform.position, player.position);
-                GUILayout.Label($"Distance au Player: {distance:F1}");
+                GUILayout.Label($"Distance: {distance:F1}");
             }
             
-            GUILayout.Space(10);
-            GUILayout.Label("CONTRÔLES CAMÉRA:");
-            GUILayout.Label("IJKL = Déplacer");
-            GUILayout.Label("+/- = Zoom");
-            GUILayout.Label("R = Revenir au Player");
-            GUILayout.Label("T = Toggle Suivi");
-            GUILayout.Label("Y = Vue d'ensemble");
+            GUILayout.Space(5);
+            GUILayout.Label("Controles: IJKL +/- R T Y");
             
             GUILayout.EndArea();
         }
         
+        // Version simplifiée des gizmos
         private void OnDrawGizmos()
         {
-            if (!showGizmos) return;
-            
-            // Dessiner une croix au centre de la caméra
             if (mainCamera != null)
             {
                 Gizmos.color = Color.red;
-                Vector3 camPos = mainCamera.transform.position;
-                Gizmos.DrawLine(camPos + Vector3.left * 0.5f, camPos + Vector3.right * 0.5f);
-                Gizmos.DrawLine(camPos + Vector3.up * 0.5f, camPos + Vector3.down * 0.5f);
-            }
-            
-            // Dessiner une ligne entre la caméra et le player
-            if (mainCamera != null && player != null)
-            {
-                Gizmos.color = Color.yellow;
-                Gizmos.DrawLine(mainCamera.transform.position, player.position);
+                Vector3 pos = mainCamera.transform.position;
+                Gizmos.DrawWireCube(pos, Vector3.one * 0.5f);
             }
         }
     }
