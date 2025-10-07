@@ -7,7 +7,9 @@ namespace UniQuest.Utils
     /// </summary>
     public class QuickTestSetup : MonoBehaviour
     {
-        [Header("Quick Setup")]
+        [Header("Quick Setup Info")]
+        public string info = "Utiliser le menu contextuel (clic droit) pour les actions";
+        
         [ContextMenu("Create Test Player")]
         public void CreateTestPlayer()
         {
