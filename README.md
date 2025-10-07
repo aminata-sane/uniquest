@@ -87,8 +87,23 @@ Assets/
 
 1. Ouvrir la scène `GameScene` 
 2. Appuyer sur **Play** ▶️
-3. Utiliser **WASD** ou **flèches directionnelles** pour bouger
+3. Utiliser **WASD** ou **flèches directionnelles** pour bouger le joueur
 4. Vérifier la console Unity pour les messages de debug
+
+### 📹 Contrôles de Caméra
+
+**Scripts disponibles :**
+- `SimpleCameraController` : Contrôle de caméra complet
+- `CameraDebugHelper` : Affichage d'informations de debug
+
+**Contrôles en jeu :**
+- **IJKL** : Déplacer la caméra manuellement
+- **+/-** : Zoom in/out
+- **R** : Revenir au joueur
+- **T** : Toggle suivi automatique du joueur
+- **Y** : Vue d'ensemble de la scène
+
+> 💡 **Astuce** : Ajouter le `SimpleCameraController` à la caméra principale pour avoir tous les contrôles. Le `CameraDebugHelper` affiche des infos utiles à l'écran.
 
 ---
 
