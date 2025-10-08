@@ -6,7 +6,7 @@ namespace UniQuest.Map
     /// <summary>
     /// Gestionnaire du tileset - Charge et organise les sprites du tileset
     /// </summary>
-    [CreateAssetMenu(fileName = "TilesetManager", menuName = "UniQuest/Map/Tileset Manager")]
+    [CreateAssetMenu(fileName = "New TilesetManager", menuName = "UniQuest/Tileset Manager")]
     public class TilesetManager : ScriptableObject
     {
         [Header("Tileset Configuration")]

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UniQuest.Characters;
 using UniQuest.Inventory;
+using Debug = UnityEngine.Debug;  // Résolution explicite du conflit de namespace
 
 namespace UniQuest.Core
 {

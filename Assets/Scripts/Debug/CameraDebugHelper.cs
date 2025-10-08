@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UniQuest.Debug
+namespace UniQuest.Diagnostic
 {
     /// <summary>
     /// Helper simple pour déboguer la caméra - version allégée
