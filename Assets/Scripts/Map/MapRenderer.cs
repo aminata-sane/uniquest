@@ -127,11 +127,15 @@ namespace UniQuest.Map
             sr.sortingLayerName = "Ground"; // Assurez-vous que ce layer existe
             
             // Ajouter les composants de gameplay si nécessaire
+            // DÉSACTIVÉ : Génération automatique de colliders
+            // Utilisez plutôt ObstacleGenerator pour placer manuellement les obstacles
+            /*
             if (!tileData.isWalkable)
             {
                 BoxCollider2D collider = tileObj.AddComponent<BoxCollider2D>();
                 collider.size = Vector2.one * tileWorldSize;
             }
+            */
             
             if (tileData.terrainType != TerrainType.Grass)
             {

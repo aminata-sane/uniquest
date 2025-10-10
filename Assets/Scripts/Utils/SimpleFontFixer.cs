@@ -1,5 +1,7 @@
 using UnityEngine;
+#if UNITY_UGUI
 using UnityEngine.UI;
+#endif
 
 namespace UniQuest.Utils
 {
@@ -14,11 +16,11 @@ namespace UniQuest.Utils
 1. Ce script évite TextMesh Pro complètement
 2. Utilise seulement les Text UI standard de Unity
 3. Aucune dépendance externe requise";
-        
+
+#if UNITY_UGUI
         [ContextMenu("Fix Standard UI Text Components")]
         public void FixStandardUITexts()
         {
-            // Chercher tous les Text standard dans la scène
             var textComponents = FindObjectsByType<Text>(FindObjectsSortMode.None);
             
             int fixedCount = 0;
@@ -68,5 +70,11 @@ namespace UniQuest.Utils
             
             Debug.Log($"✅ {disabledCount} objets avec fonts manquantes désactivés");
         }
+#else
+        void Start()
+        {
+            Debug.LogWarning("⚠️ UI System (UnityEngine.UI) n'est pas disponible - SimpleFontFixer désactivé");
+        }
+#endif
     }
 }

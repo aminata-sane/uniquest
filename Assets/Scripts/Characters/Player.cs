@@ -4,11 +4,12 @@ namespace UniQuest.Characters
 {
     public class Player : Character
     {
-        [Header("Player Movement")]
-        public float moveSpeed = 5f;
-        public bool canMove = true;
-        
-        [Header("Correction des axes (si nécessaire)")]
+    [Header("Player Movement")]
+    public float moveSpeed = 5f;
+    public bool canMove = true;
+    
+    [Header("Player Appearance")]
+    public float playerScale = 3f; // Taille du Player (3x plus grand)        [Header("Correction des axes (si nécessaire)")]
         public bool invertHorizontal = false;
         public bool invertVertical = true;  // Corrigé par défaut pour Unity
         
@@ -51,6 +52,9 @@ namespace UniQuest.Characters
             {
                 gameObject.tag = "Player";
             }
+            
+            // Appliquer la taille du Player
+            transform.localScale = new Vector3(playerScale, playerScale, 1f);
             
             Debug.Log($"Joueur {characterName} initialisé!");
         }

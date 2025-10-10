@@ -1,0 +1,2542 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db72263394c73438b89c6e2c0afdaaf6, type: 3}
+  m_Name: MainTilesetManager
+  m_EditorClassIdentifier: Assembly-CSharp::UniQuest.Map.TilesetManager
+  tilesetTexture: {fileID: 2800000, guid: 82bb3632096b04446b007016db2f199e, type: 3}
+  tileSize: 32
+  tilesPerRow: {x: 16, y: 16}
+  availableTiles:
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  - tileSprite: {fileID: 0}
+    tileColor: {r: 1, g: 1, b: 1, a: 1}
+    isWalkable: 1
+    isObstacle: 0
+    movementCost: 1
+    terrainType: 0
+    speedMultiplier: 1
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  grassTile:
+    tileSprite: {fileID: 0}
+    tileColor: {r: 0, g: 0, b: 0, a: 0}
+    isWalkable: 0
+    isObstacle: 0
+    movementCost: 0
+    terrainType: 0
+    speedMultiplier: 0
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  stoneTile:
+    tileSprite: {fileID: 0}
+    tileColor: {r: 0, g: 0, b: 0, a: 0}
+    isWalkable: 0
+    isObstacle: 0
+    movementCost: 0
+    terrainType: 0
+    speedMultiplier: 0
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  waterTile:
+    tileSprite: {fileID: 0}
+    tileColor: {r: 0, g: 0, b: 0, a: 0}
+    isWalkable: 0
+    isObstacle: 0
+    movementCost: 0
+    terrainType: 0
+    speedMultiplier: 0
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  wallTile:
+    tileSprite: {fileID: 0}
+    tileColor: {r: 0, g: 0, b: 0, a: 0}
+    isWalkable: 0
+    isObstacle: 0
+    movementCost: 0
+    terrainType: 0
+    speedMultiplier: 0
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
+  sandTile:
+    tileSprite: {fileID: 0}
+    tileColor: {r: 0, g: 0, b: 0, a: 0}
+    isWalkable: 0
+    isObstacle: 0
+    movementCost: 0
+    terrainType: 0
+    speedMultiplier: 0
+    damagePerSecond: 0
+    stepSound: {fileID: 0}
+    isInteractable: 0
+    interactionMessage: 
