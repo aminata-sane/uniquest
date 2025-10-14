@@ -645,11 +645,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 10.872685, y: -8.59355}
-      - {x: 10.845458, y: -12.695564}
+    - - {x: 9.408897, y: -8.242241}
+      - {x: 9.273253, y: -9.805953}
+      - {x: 9.557324, y: -10.821916}
+      - {x: 13.474807, y: -10.990802}
       - {x: 13.5478325, y: -10.99395}
       - {x: 13.767001, y: -10.615754}
-      - {x: 13.80555, y: -10.6157465}
+      - {x: 13.629895, y: -10.791401}
       - {x: 14.411719, y: -8.729496}
       - {x: 13.38713, y: -8.644957}
   m_UseDelaunayMesh: 0
@@ -881,50 +883,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1552224805}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1038873922
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1038873924}
-  - component: {fileID: 1038873923}
-  m_Layer: 0
-  m_Name: TerrainManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1038873923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038873922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac10ff6fe76d44ead9ba85a336b79578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
---- !u!4 &1038873924
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038873922}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.49881, y: 0, z: -9.62507}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1434905826
 GameObject:
@@ -1284,7 +1242,18 @@ MonoBehaviour:
   availableAttacks: []
   moveSpeed: 5
   canMove: 1
-  playerScale: 3
+  playerScale: 4
+  idleFrontSprite: {fileID: 7416348835679803609, guid: 6c7d8e1162b964c84b76474c650e145e, type: 3}
+  idleBackSprite: {fileID: -9131089091847774696, guid: 662f30d47805c4b3183c6a91017aaf54, type: 3}
+  idleLeftSprite: {fileID: -5412709504037589089, guid: ca3de9ff47772425c9a891f695f7c509, type: 3}
+  idleRightSprite: {fileID: 783048425243750718, guid: 6d0779e7a7ac643e8a2b8133858135aa, type: 3}
+  walkFrontSprite: {fileID: 5967011606029305997, guid: eeb9012b72a4240bc9e8de7492505dff, type: 3}
+  walkBackSprite: {fileID: -1073666099841900266, guid: 87a4eadb3246647b4a9ba294b2242ba5, type: 3}
+  walkLeftSprite: {fileID: 5855333732993663550, guid: a090f7255914f4b76bb2944c4c6c2eb5, type: 3}
+  walkRightSprite: {fileID: -5792306727823923046, guid: 409f46ff42754467293b66416609df05, type: 3}
+  shadowSprite: {fileID: 2186797054312677685, guid: e36f2c995fb534e48b8f4e7b5617b233, type: 3}
+  damageFlashColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.2
   invertHorizontal: 0
   invertVertical: 1
   currentTerrainSpeedMultiplier: 1
@@ -1356,7 +1325,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1552224805}
-  - {fileID: 1038873924}
   - {fileID: 380657078}
   - {fileID: 1532699721}
   - {fileID: 1434905828}
